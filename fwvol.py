@@ -129,7 +129,7 @@ def analyze_ticker(ticker, front_exp, back_exp, r=0.02, multiplier=100):
 
 # --- Streamlit App ---------------------------------------------------------
 
-st.title("📈 Options Dashboard with Forward Vol, Gamma & Expected Move (with Tooltips)")
+st.title("📈 Options Dashboard with Forward Vol, Gamma & Expected Move")
 
 ticker_input = st.text_input("Enter ticker symbol:", value="COIN").upper()
 
@@ -240,5 +240,6 @@ if ticker_input:
 
     except Exception as e:
         st.error(f"Error fetching data: {e}")
+
 
 
